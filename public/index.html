@@ -1,0 +1,11 @@
+<!-- The ENTIRE public/index.html file goes here, but with ONE critical change in the script tag -->
+<!-- ... your full HTML and CSS from before ... -->
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script>
+    // Replace this with your ACTUAL Render server URL
+    const BACKEND_URL = "https://your-backend-server-url.onrender.com"; 
+    const socket = io(BACKEND_URL);
+
+    // ... rest of the client-side JavaScript is the same ...
+</script>
